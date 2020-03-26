@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe BaseUrl, type: :model do
   it "has a valid factory" do
-    expect(FactoryBot.build(:base_url)).to be_valid
+    expect(build(:base_url)).to be_valid
   end
 
   it { should have_many(:paths).dependent(:destroy) }
