@@ -1,4 +1,6 @@
 class StatsController < ApplicationController
+  ### Retrieve global stats
+
   def index
     @paths = Path.all
     render json: stats, status: 200
