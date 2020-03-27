@@ -87,11 +87,12 @@ curl "https://betkom-shortener.herokuapp.com/stats"
 ```json
 {
   "total_visits": {
-      "https://www.bbc.com/news": 2 // bbc.com/news is one of the urls we shortened
+      "https://www.bbc.com/news": 2
   }
 }
 ```
-To retrive global stats, use
+<!--bbc.com/news is one of the urls we shortened-->
+To retrieve global stats, use
 
 ### HTTP Request
 
