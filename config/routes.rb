@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get '/u/:unique_code', to: 'base_urls#show', as: :short
   get '/u/:unique_code/stats', to: 'base_urls#stats', as: :stats
+
+  resources :stats, only: [:index]
 end
